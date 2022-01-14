@@ -1,0 +1,159 @@
+/* ----------------------------------
+Project All requirements
+======================================
+Fonts
+--------
+Font name: Poppins
+Font weight: Regular 400, Medium 500, Semi-bold 600, Bold 700
+
+Font name: Roboto
+Font weight: Regular 400, Medium 500, Bold 700
+
+Font name: Inter
+Font weight: Regular 400, Medium 500, Bold 700
+
+Color:
+-------------------------------------
+Pink color: #E02C6D;
+Semi dark color: #3A3A3A;
+Pure blak: #000000;
+Pure White: #ffffff;
+Gray: #787885;
+Light gray: #D9DBE1;
+Orange: #FB8200;
+Navi blue: #0A0826;
+
+------------------------------------*/
+
+/* ------- Google fonts -------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+/* ---- default utilities -------- */
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+:root{
+    /* --- all colors --- */
+    --pink-color: #E02C6D;
+    --semi-dark-color: #3A3A3A;
+    --pure-black-color: #000000;
+    --pure-white-color: #ffffff;
+    --gray-color: #787885;
+    --light-gray-color: #D9DBE1;
+    --orange-color: #FB8200;
+    --navi-blue-color: #0A0826;
+
+    /* --- other styles --- */
+    --box-shadow: 0 0 40px 0 #00000026;
+
+}
+
+img{
+    width: 100%;
+}
+
+.btn{
+    background: var(--pink-color);
+    color: var(--pure-white-color);
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+.section-title{
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--semi-dark-color);
+    text-align: center;
+}
+
+/* ----- header section css ----- */
+.header{
+    position: fixed;
+    width: 100%;
+}
+
+.header .navbar{
+    padding: 1em 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar .logo a{
+    color: var(--semi-dark-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header .navbar .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar .nav-links li a{
+    color: var(--semi-dark-color);
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: 600;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+.header .navbar .nav-links li a:hover{
+    color: var(--pink-color);
+}
+
+
+
+/* this style will aply when need */
+/* .header .navbar .nav-links li a{
+    color: var(--semi-dark-color);
+    display: inline-block;
+    margin-left: 30px;
+    padding-bottom: 2px;
+    font-weight: 600;
+    position: relative;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+.header .navbar .nav-links li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--navi-blue-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .3s;
+}
+
+.header .navbar .nav-links li a:hover::after{
+    width: 100%;
+}
+
+.header .navbar .nav-links li:nth-child(5) a:hover::after{
+    height: 0px;
+    width: 0;
+}
+.header .navbar .nav-links li:nth-child(6) a:hover::after{
+    height: 0px;
+    width: 0;
+} */
