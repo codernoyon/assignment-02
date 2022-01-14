@@ -68,12 +68,25 @@ img{
     width: 100%;
 }
 
+section{
+    padding: 3rem 8%;
+}
+
 .btn{
     background: var(--pink-color);
     color: var(--pure-white-color);
-    padding: 10px 25px;
+    padding: .6rem 2rem;
     font-size: 16px;
     border-radius: 40px;
+    display: inline-block;
+    border: 1px solid var(--pink-color);
+    transition: .3s;
+}
+
+.btn:hover{
+    border: 1px solid var(--pink-color);
+    background: transparent;
+    color: var(--pink-color);
 }
 
 .section-title{
@@ -87,6 +100,7 @@ img{
 .header{
     position: fixed;
     width: 100%;
+    background: var(--pure-white-color);
 }
 
 .header .navbar{
@@ -96,10 +110,20 @@ img{
     align-items: center;
 }
 
+.header .navbar .menu-bar{
+    display: none;
+}
+
 .header .navbar .logo a{
     color: var(--semi-dark-color);
     font-size: 24px;
     font-weight: 700;
+}
+
+
+.nav-links-shopping-cart{
+    display: flex;
+    align-items: center;
 }
 
 .header .navbar .nav-links{
@@ -120,6 +144,20 @@ img{
     color: var(--pink-color);
 }
 
+.shopping-cart{
+    margin-left: 30px;
+}
+
+.shopping-cart a{
+    color: var(--semi-dark-color);
+    display: inline-block;
+    transition: .3s;
+}
+
+
+.shopping-cart a:hover{
+    color: var(--pink-color);
+}
 
 
 /* this style will aply when need */
@@ -157,3 +195,50 @@ img{
     height: 0px;
     width: 0;
 } */
+
+
+/* ----- home section css ------ */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 5em;
+}
+
+.home-child{
+    flex-basis: 48%;
+
+}
+
+.home-image{
+    background: url(../images/home/circle.png);
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center center;
+    flex-basis: 38%;
+}
+
+.home-image img{
+    transition: .3s;
+    cursor: pointer;
+}
+
+.home-image img:hover{
+    transform: scale(0.9);
+}
+
+.home-child a span{
+    margin-left: 5px;
+}
+
+.home-child h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    color: var(--semi-dark-color);
+}
+
+.home-child p{
+    margin: 15px 0;
+    color: var(--semi-dark-color);
