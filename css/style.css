@@ -60,7 +60,7 @@ body{
     --navi-blue-color: #0A0826;
 
     /* --- other styles --- */
-    --box-shadow: 0 0 40px 0 #00000026;
+    --box-shadow: 1px 6px 20px 3px lightgrey;
 
 }
 
@@ -69,7 +69,7 @@ img{
 }
 
 section{
-    padding: 3rem 8%;
+    padding: 5rem 8%;
 }
 
 .btn{
@@ -273,4 +273,113 @@ section{
 
 .brands-logo .logo-item{
     flex-basis: 10%;
+}
+
+
+/* ------- collection seciton css -------- */
+
+.collection-box{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+}
+
+.col-item{
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.col-item:hover{
+    box-shadow: 2px 7px 20px 3px lightgrey;
+    transform: scale(1.01);
+}
+
+.col-details{
+    margin-top: 10px;
+}
+
+.col-details h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.col-details h5{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.col-details .ratings{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.col-details .ratings .stars{
+    margin-right: 10px;
+    color: var(--orange-color);
+}
+
+.col-details .stock{
+    color: var(--gray-color);
+}
+
+.see-more{
+    float: right;
+}
+
+.see-more a{
+    color: var(--pink-color);
+}
+
+
+
+/* --------- footer section css ------- */
+
+.footer{
+    padding: 3rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--navi-blue-color);
+}
+
+.footer .footer-container{
+    flex-basis: 45%;
+    text-align: center;
+    color: var(--pure-white-color)
+}
+
+.footer .footer-container p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+.footer .footer-container .social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.footer .footer-container .social-links li a{
+    color: var(--pure-white-color);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--gray-color);
+    display: inline-block;
+    margin: 0 10px;
+    transition: .3s;
+}
+
+.footer .footer-container .social-links li a:hover{
+    background: var(--pink-color)
 }
