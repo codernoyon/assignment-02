@@ -9,10 +9,38 @@
     /* --- header section --- */
     .header .navbar .menu-bar{
         display: block;
+        cursor: pointer;
+    }
+
+
+
+    .header .navbar .menu-bar.fa-times{
+        transform: rotate(180deg);
+        transition: .3s;
     }
 
     .header .navbar .nav-links{
-        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 99%;
+        background: var(--pure-white-color);
+        border-top: 1px solid black;
+        transition: .3s;
+        clip-path:  polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+
+
+    .header .navbar .nav-links.active{
+        display: block;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar .nav-links li a{
+        margin-left: 0;
+        padding: 10px 45px;
+        display: block;
     }
 
     /* --- home section --- */
@@ -29,13 +57,15 @@
         padding: .5rem 1.5rem;
     }
 
+
+
     .home-image{
         flex-basis: 45%;
     }
 }
 /* --- mobile devices --- */
 
-@media(max-width: 480px){
+@media(max-width: 580px){
 
     /* --- header section --- */
     .header .navbar .logo a {
@@ -58,6 +88,8 @@
 
     .home-child{
         order: 2;
+        text-align: center;
+        padding-bottom: 2rem;
     }
 
     .home-image{
@@ -68,9 +100,25 @@
     .home-child h1{
         font-size: 30px;
         line-height: 38px;
+        
     }
 
     .home-child p{
         font-size: 15px;
+    }
+
+    /* --- brands log section --- */
+
+    .inner-brands-logo{
+        padding-top: 22rem;
+    }
+
+    .brands-logo{
+        padding: 20px 0px;
+        justify-content: space-evenly;
+    }
+
+    .brands-logo .logo-item{
+        flex-basis: 23%;
     }
 }

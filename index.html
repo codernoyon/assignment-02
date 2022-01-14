@@ -36,7 +36,7 @@
 
     <!-- home section start -->
     <section id="home">
-        <div class="home-child">
+        <div class="home-child home-text">
             <h1>Start your Journey as Influencer</h1>
             <p>Influencer marketing is a hot marketing phenomenon that everyone is talking about. It has become a mainstream marketing tactic and is no longer limited to a select few brands or agencies.</p>
             <a href="#" class="btn">Preebook now <span><i class="fas fa-arrow-right"></i></span></a>
@@ -46,5 +46,43 @@
         </div>
     </section>
     <!-- home section end -->
+
+    <!-- brands logo section start -->
+    <div class="inner-brands-logo">
+        <div class="brands-logo">
+            <div class="logo-item">
+                <a href="#"><img src="./images/brands-logo/alibaba.svg" alt=""></a>
+            </div>
+            <div class="logo-item">
+                <a href="#"><img src="./images/brands-logo/amazon.svg" alt=""></a>
+            </div>
+            <div class="logo-item">
+                <a href="#"><img src="./images/brands-logo/daraz.svg" alt=""></a>
+            </div>
+            <div class="logo-item">
+                <a href="#"><img src="./images/brands-logo/ebay.svg" alt=""></a>
+            </div>
+            <div class="logo-item">
+                <a href="#"><img src="./images/brands-logo/rakuten.svg" alt=""></a>
+            </div>
+            <div class="logo-item">
+                <a href="#"><img src="./images/brands-logo/walmart.svg" alt=""></a>
+            </div>
+            <div class="logo-item">
+                <a href="#"><img src="./images/brands-logo/target.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- brands logo section end -->
+
+    <script>
+        const menuBar = document.querySelector('.menu-bar');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBar.addEventListener('click', function openMenu(){
+            navLinks.classList.toggle('active')
+            menuBar.classList.toggle('fa-times')
+        });
+    </script>
 </body>
 </html>

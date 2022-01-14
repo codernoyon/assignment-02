@@ -101,6 +101,7 @@ section{
     position: fixed;
     width: 100%;
     background: var(--pure-white-color);
+    z-index: 5;
 }
 
 .header .navbar{
@@ -108,10 +109,17 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
 }
 
 .header .navbar .menu-bar{
     display: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .header .navbar .logo a{
@@ -242,3 +250,27 @@ section{
 .home-child p{
     margin: 15px 0;
     color: var(--semi-dark-color);
+    
+    
+}
+
+/* ----- brands logo setion css ------ */
+.inner-brands-logo{
+    padding: 2rem 15%;
+    display: block;
+}
+
+
+.brands-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    border-top: 1px solid var(--light-gray-color);
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.brands-logo .logo-item{
+    flex-basis: 10%;
+}
