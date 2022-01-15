@@ -160,6 +160,7 @@ section{
     color: var(--semi-dark-color);
     display: inline-block;
     transition: .3s;
+    font-size: 18px;
 }
 
 
@@ -242,7 +243,7 @@ section{
 
 .home-child h1{
     font-size: 50px;
-    line-height: 70px;
+    line-height: 60px;
     font-weight: 700;
     color: var(--semi-dark-color);
 }
@@ -278,6 +279,10 @@ section{
 
 /* ------- collection seciton css -------- */
 
+#collection{
+    padding: 5rem 10%;
+}
+
 .collection-box{
     margin: 50px 0;
     display: grid;
@@ -291,6 +296,7 @@ section{
     box-shadow: var(--box-shadow);
     cursor: pointer;
     transition: .3s;
+    overflow: hidden;
 }
 
 .col-item:hover{
@@ -298,17 +304,27 @@ section{
     transform: scale(1.01);
 }
 
+.col-image{
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.col-item:hover .col-image{
+    transform: scale(1.1);
+}
+
 .col-details{
     margin-top: 10px;
 }
 
 .col-details h3{
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
 }
 
 .col-details h5{
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
 }
 
