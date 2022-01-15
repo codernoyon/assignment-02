@@ -60,7 +60,7 @@ body{
     --navi-blue-color: #0A0826;
 
     /* --- other styles --- */
-    --box-shadow: 1px 6px 20px 3px lightgrey;
+    --box-shadow: -1px 1px 6px 3px #00000024;
 
 }
 
@@ -297,20 +297,26 @@ section{
     cursor: pointer;
     transition: .3s;
     overflow: hidden;
+
 }
 
 .col-item:hover{
-    box-shadow: 2px 7px 20px 3px lightgrey;
-    transform: scale(1.01);
+    box-shadow: 2px 2px 10px 3px #00000024
+
 }
 
 .col-image{
     width: 100%;
     overflow: hidden;
     transition: .3s;
+    border-radius: 5px;
 }
 
-.col-item:hover .col-image{
+.col-image img{
+    transition: .3s;
+}
+
+.col-item:hover .col-image img{
     transform: scale(1.1);
 }
 
