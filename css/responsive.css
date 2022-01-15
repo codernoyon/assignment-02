@@ -1,8 +1,3 @@
-/* --- small srceen laptop --- */
-@media(max-width:991px){
-
-}
-
 /* --- ipads, tablet ---- */
 @media(max-width:880px){
 
@@ -11,7 +6,6 @@
         display: block;
         cursor: pointer;
     }
-
 
 
     .header .navbar .menu-bar.fa-times{
@@ -68,6 +62,12 @@
     /* --- collection section css ---- */
     .collection-box{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --- why choose us section ----- */
+
+    .qualities{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -139,14 +139,13 @@
 
     /* --- brands log section --- */
 
-
     .brands-logo{
         padding: 20px 0px;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .brands-logo .logo-item{
-        flex-basis: 22%;
+        flex-basis: 21%;
     }
 
 
@@ -156,6 +155,20 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* ----- why choose us section css ----- */
+
+    #why-choose-us{
+        flex-direction: column;
+    }
+
+    .choose-datils{
+        margin-bottom: 50px;
+    }
+
+    .qualities{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
     /* ---- footer secito css ---- */
 
     .footer .footer-container{
